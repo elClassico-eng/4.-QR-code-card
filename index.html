@@ -16,16 +16,56 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <section class="card-section">
-            <img
-                src="./image-qr-code.png"
-                alt="QR-code in blue background color"
-            />
-            <h2>Improve your front-end skills by buildings projects</h2>
-            <p>
-                Scan QR code to visit Frontend Mentor and take your coding
-                skills to next level
-            </p>
-        </section>
+        <main>
+            <article
+                class="card"
+                itemscope
+                itemtype="https://schema.org/WebSite"
+                aria-labelledby="qr-header"
+            >
+                <figure>
+                    <img
+                        class="card__image"
+                        src="./image-qr-code.png"
+                        alt="QR-code linking to Frontend Mentor"
+                        itemprop="image"
+                    />
+                </figure>
+                <hgroup class="card__body">
+                    <h1
+                        class="card__header"
+                        itemprop="headline"
+                        itemprop="description"
+                    >
+                        Improve your front-end skills by buildings projects
+                    </h1>
+                    <p class="card__description">
+                        Scan QR code to visit Frontend Mentor and take your
+                        coding skills to next level
+                    </p>
+                </hgroup>
+            </article>
+        </main>
+
+        <footer>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    itemprop="creator"
+                    >Frontend Mentor</a
+                >
+                Coded by
+                <a
+                    href="https://www.frontendmentor.io/profile/elClassico-eng"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    itemprop="author"
+                    >Danya</a
+                >
+            </div>
+        </footer>
     </body>
 </html>
